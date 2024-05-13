@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobi</title>
+    <link rel="stylesheet" href="hobi.css">
+</head>
+<body>
+    <h3><em>SEHARI-HARI</em></h3>
+    <p id="Hobby">
+        Hobby : <br>
+        <input type="checkbox" name="olahraga" onclick="showHobby()">olahraga
+        <input type="checkbox" name="nonton film" onclick="showHobby()">nonton film
+        <input type="checkbox" name="jajan" onclick="showHobby()">jajan
+    </p>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-sm-4" id="olahraga" style="display: none;">
+                <div class="person">
+                    <i class="fas fa-gamepad fa-5x"></i>
+                    <p class="text-center"><strong>olahraga</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-4" id="nonton film" style="display: none;">
+                <div class="person">
+                    <i class="fas fa-utensils fa-5x"></i>
+                    <p class="text-center"><strong>nonton film</strong></p>
+                </div>
+            </div>
+            <div class="col-sm-4" id="jajan" style="display: none;">
+                <div class="person">
+                    <i class="fas fa-bed fa-5x"></i>
+                    <p class="text-center"><strong>jajan</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="hobi.js"></script>
+    <button class="back"><a href="index.html">HALAMAN UTAMA</a></button>
+</body>
+</html>

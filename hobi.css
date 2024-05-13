@@ -1,0 +1,45 @@
+.back, a{
+    margin-top: 5px;
+    background-color:  #2880b9;
+    color: white;
+    text-decoration: none;
+    width: 70px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.person {
+  border: 3px solid black; /* Mengatur border warna hitam dengan ketebalan 10px */
+  margin-bottom: 25px;
+  width: 300px; /* Lebar border sesuai dengan lebar foto */
+  height: 300px; /* Tinggi border sesuai dengan tinggi foto */
+  opacity: 0.7;
+  display: flex; /* Menggunakan flexbox untuk mengatur posisi vertikal */
+  flex-direction: column; /* Mengatur arah tata letak ke vertikal */
+  justify-content: center; /* Menyatukan konten secara vertikal di tengah */
+  border-radius: 150px; /* Membuat border bulat dengan radius setengah dari lebar/tinggi */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+.person:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+

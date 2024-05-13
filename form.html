@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+<body>
+    <form>
+        <fieldset>
+            <legend>Halaman Biodata</legend>
+
+              <p>Nama : <input type="text" name="nama"></p>
+              <p>Alamat : <input type="text" name="alamat"></p>
+              <form>
+                <p>Fakultas :
+                  <select name="fakultas" id="fakultas" onchange="showProdi()">
+                        <option value="fakultas1">Fakultas Ekonomi dan Bisnis</option>
+                        <option value="fakultas2">Fakultas Ilmu Sosial Politik</option>
+                        <option value="fakultas3">Fakultas Pendidikan Bahasa</option>
+                        <option value="fakultas4">Fakultas Agama Islam</option>
+                        <option value="fakultas5">Fakultas Hukum</option>
+                        <option value="fakultas6">Fakultas Pertanian</option>
+                        <option value="fakultas7">Fakultas Kedokteran</option>
+                        <option value="fakultas8">Fakultas Teknik</option>
+                        <option value="fakultas9">Program Vokasi</option>
+                        <option value="fakultas10">Pascasarjana</option>
+                        <option value="fakultas11">LTC</option>
+                    </select>
+                </p>
+                <p id="prodi_section" style="display: none;">Program Studi :
+                  <select name="prodi" id="prodi">
+                    <option value="prodi1">Akuntansi</option>
+                    <option value="prodi1">IPAcc</option>
+                    <option value="prodi1">Manajemen</option>
+                    <option value="prodi1">IMABS</option>
+                    <option value="prodi1">Ekonomi</option>
+                    <option value="prodi1">IPIBF</option>
+                    <option value="prodi2">Ilmu Hubungan Internasional</option>
+                    <option value="prodi2">Ilmu Komunikasi</option>
+                    <option value="prodi2">Ilmu Pemerintah</option>
+                    <option value="prodi3">Pend. Bahasa Inggris</option>
+                    <option value="prodi3">Pend. Bahasa Arab</option>
+                    <option value="prodi3">Pend. Bahasa Jepang</option>
+                    <option value="prodi4">Agama Islam</option>
+                    <option value="prodi5">Hukum</option>
+                    <option value="prodi6">Argoteknologi</option>
+                    <option value="prodi6">Argibisnis</option>
+                    <option value="prodi7">Kedokteran</option>
+                    <option value="prodi7">Kedokteran Gigi</option>
+                    <option value="prodi7">Ilmu Keperawatan</option>
+                    <option value="prodi7">Farmasi</option>
+                    <option value="prodi7">Profesi Dokter</option>
+                    <option value="prodi7">Profesi Dokter Gigi</option>
+                    <option value="prodi7">Profesi Ners</option>
+                    <option value="prodi7">Profesi Apoteker</option>
+                    <option value="prodi8">Teknik Sipil</option>
+                    <option value="prodi8">Teknik Mesin</option>
+                    <option value="prodi8">Teknik Elektro</option>
+                    <option value="prodi8">Teknologi Informasi</option>
+                    </select>
+                </p>
+            </form>
+            
+            <p>
+                Jenis Kelamin :
+                  <input type="radio" name="jk" value="laki-laki" checked />
+                      Laki-laki
+                  <input type="radio" name="jk" value="perempuan"  />
+                      Perempuan
+              </p>
+              <p id="bahasa_pemrograman_section" style="display: none;">
+                Bahasa pemrograman yang ingin dikuasai : <br>
+                <input type="checkbox" name="web">Web
+                <input type="checkbox" name="mobile">Mobile
+                <input type="checkbox" name="desk">Desktop
+            </p>
+                <body>
+                    <p>
+                        Kota asal :
+                        <select>
+                            <option value="Aceh">Aceh</option>
+                            <option value="Sumatera Utara">Sumatera Utara</option>
+                            <option value="Sumatera Barat">Sumatera Barat</option>
+                            <option value="Riau">Riau</option>
+                            <option value="Kepulauan Riau">Kepulauan Riau</option>
+                            <option value="Jambi">Jambi</option>
+                            <option value="Bengkulu">Bengkulu</option>
+                            <option value="Sumatera Selatan">Sumatera Selatan</option>
+                            <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+                            <option value="Lampung">Lampung</option>
+                            <option value="DKI Jakarta">DKI Jakarta</option>
+                            <option value="Banten">Banten</option>
+                            <option value="Jawa Barat">Jawa Barat</option>
+                            <option value="Jawa Tengah">Jawa Tengah</option>
+                            <option value="Daerah Istimewa Yogyakarta">Daerah Istimewa Yogyakarta</option>
+                            <option value="Jawa Timur">Jawa Timur</option>
+                            <option value="Bali">Bali</option>
+                            <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+                            <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+                            <option value="Kalimantan Barat">Kalimantan Barat</option>
+                            <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+                            <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+                            <option value="Kalimantan Timur">Kalimantan Timur</option>
+                            <option value="Kalimantan Utara">Kalimantan Utara</option>
+                            <option value="Gorontalo">Gorontalo</option>
+                            <option value="Sulawesi Utara">Sulawesi Utara</option>
+                            <option value="Sulawesi Barat">Sulawesi Barat</option>
+                            <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+                            <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+                            <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+                            <option value="Maluku">Maluku</option>
+                            <option value="Maluku Utara">Maluku Utara</option>
+                            <option value="Papua Barat">Papua Barat</option>
+                            <option value="Papua">Papua</option>
+                            <option value="Papua Tengah">Papua Tengah</option>
+                            <option value="Papua Pegunung">Papua Pegunung</option>
+                            <option value="Papua Selatan">Papua Selatan</option>
+                            <option value="Papua Barat Daya">Papua Barat Daya</option>
+                        </select>
+                    </p>
+                </body>
+                </html>
+                
+              <p>
+                Alasan kenapa memilih UMY?:<br>
+                <textarea rows="10" cols="60" placeholder="Tulis jawaban Anda di sini" ></textarea>
+              </p>
+              <p><input type="Submit" value="Submit"></p>
+        </fieldset>
+    </form>
+
+   <button class="back"><a href="index.html">HALAMAN UTAMA</a></button>
+   <script src="form.js"></script>
+</body>

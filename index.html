@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* CSS untuk border */
+        .border {
+            border: 2px solid black; /* Atur ketebalan dan warna border */
+            padding: 20px; /* Beri padding agar konten tidak langsung berdekatan dengan border */
+            width: fit-content; /* Atur lebar border agar sesuai dengan konten di dalamnya */
+            margin: auto; /* Atur margin agar border berada di tengah secara horizontal */
+            border-radius: 10px; /* Atur border-radius */
+            background-color: darkgray;
+            display: flex; /* Menggunakan flexbox */
+            flex-direction: column; /* Arahkan flexbox menjadi kolom */
+            justify-content: center; /* Pusatkan konten secara vertikal */
+            height: 60vh; /* Atur ketinggian border menjadi 50% dari tinggi layar */
+        }
+
+        /* CSS untuk tombol pendaftaran */
+        .pendaftaran {
+            display: block; /* Atur tata letak tombol menjadi blok agar tombol tidak berada di samping */
+            width: auto; /* Atur lebar tombol agar mengisi seluruh lebar container */
+            padding: 10px; /* Beri padding pada tombol */
+            margin-bottom: 5px; /* Atur margin bawah agar ada jarak antara tombol */
+            text-align: center; /* Atur teks tombol menjadi tengah */
+            border-radius: 10px;
+            display: inline-block;
+            text-decoration: none;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+        .pendaftaran:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+        .gambar{
+            height: 200px;
+            width: auto;
+        }
+        h3,p{
+            text-align: center;
+            font-size: 20px;
+            font-family: sans-serif;
+            color: whitesmoke;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="border"> 
+        <section>
+            <div class="box">
+                <h3> Tampilan WEB </h3>
+            </div>
+            <p><strong>HALAMAN UTAMA</strong></p>
+            <img class="gambar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzRWv8mrB9axg4V9vihatTEi4T-s9mN8C11w&usqp=CAU" alt="Gambar">
+            <br>
+            <div class="btn">
+                <button class="pendaftaran"><a href="form.html"> Form</a></button>
+                <button class="pendaftaran"><a href="about_me.html">About Me</a></button>
+                <button class="pendaftaran"><a href="hobi.html">Hobi</a></button>
+            </div>
+        </section>
+    </div> 
+</body>
+</html>

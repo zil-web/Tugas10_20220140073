@@ -1,0 +1,38 @@
+.back, a{
+    margin-top: 5px;
+    background-color:  #2880b9;
+    color: white;
+    text-decoration: none;
+    width: 70px;
+    height: 40px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.border {
+    border: 2px solid black; /* Atur ketebalan dan warna border */
+    padding: 20px; /* Beri padding agar konten tidak langsung berdekatan dengan border */
+    width: fit-content; /* Atur lebar border agar sesuai dengan konten di dalamnya */
+    margin: auto; /* Atur margin agar border berada di tengah */
+    border-radius: 10px; /* Atur radius border */
+    background-color: rgb(10, 9, 9);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2,h3,p{
+    color :chartreuse;
+    font-size: 20px;
+    font-family:  trebuchet ms;
+}
+
+.border section {
+    text-align: center; /* Pusatkan konten dalam section */
+}
+
+.back {
+    margin-top: 20px; /* Berikan sedikit ruang atas untuk tombol kembali */
+}
+
